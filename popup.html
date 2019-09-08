@@ -1,0 +1,122 @@
+
+
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Expandable Menu</title>
+
+	<link rel="stylesheet" href="css/styles.css" type="text/css" />
+	<link rel="stylesheet" href="css/jquery-tool.css" type="text/css" />
+	<style>
+	.indicator{
+		border-radius: 50%;
+		width: 20px;
+		height: 20px;
+		background: goldenrod;
+		float: right;
+
+	}
+	</style>
+
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="popup.js"></script>
+	
+
+</head>
+<body>
+	
+	<div id="content">
+	<table>
+	<tr>
+	<td><b><p style="color:black">Florida specific?  </p></b></td>
+	<td><input type="checkbox" id="is_fl" /></td>
+	</tr>
+	<tr>
+	<td><b><p style="color:black">Select Product </p></b></td>
+	<td>
+	<select id='product_selector'>
+		<option value="Select">Select Product..</option>
+		<option value="GP">Guarantee Platina</option>
+		<option value="PP">Performance Pro</option>
+		<option value="PE">Prosperity Elite</option>
+		<option value="SI">Safe Income</option>
+		<option value="RP">Retirement Pro</option>
+	</select>
+	</td>
+	</tr>
+	</table>
+		<ul id="expmenu-freebie">
+			<li>
+				
+				<ul class="expmenu">
+					<li>
+						<div class="header">
+							<span class="label" >Application</span>
+							<span class="arrow down"></span>
+						</div>
+						<ul class="menu" style="display:none">
+							<li id="owner">Owner</li>
+							<li id="annuitant">Annuitant</li>
+							<li id="beneficiary">Beneficiary</li>
+							<li id="annuity_details">Annuity Details</li>
+							<li id="authorization">Authorization</li>
+						</ul>
+					</li>
+					<li>
+						<div class="header">
+							<span class="label" >Suitability</span>
+							<span class="arrow down"></span>
+						</div>
+						<ul class="menu" id="suit" style="display:none">
+							<li id="suit_owner">Owner</li>
+							<li id="suit_financial">Financial</li>
+							<li id="suit_important">Important</li>
+							<li id="suit_fund">Fund Scores</li>
+						</ul>
+					</li>
+					<li>
+						<div class="header">
+							<span class="label">Additional</span>
+							<span class="arrow down"></span>
+						</div>
+						<ul class="menu" style="display:none">
+							<li id="1035">1035 Exchange</li>
+						</ul>
+					</li>
+					
+					<li>
+						<div class="header">
+							<span class="label"id="confirmation">Confirmation</span>
+							
+						</div>
+						
+					</li>
+					
+				<!--	<li>
+					<div class="header">
+					
+							<strong><span class="label" id="automate">Chuck it! Let's Automate</span></strong>
+							<span class="arrow down"></span>
+							</div>
+							<ul class="menu" style="display:none">
+							<li><strong><marquee id="currentEform"></marquee></strong></li>
+							
+							
+							
+						</ul>
+						
+						</li>-->
+					
+				</ul>
+				
+			</li>
+		</ul>
+	</div>
+	
+	
+</body>
+</html>

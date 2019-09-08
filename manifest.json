@@ -1,0 +1,14 @@
+{
+  "name": "Simple form filler",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Simple form filler",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["fillAnnuitantForm.js","fillBeneficiaryForm.js","fillOwnerForm.js","fillSuitOwnerForm.js","fillAnnuityDetailsForm.js","fillAuthorizationForm.js","fillSuitFinancialForm.js","fillSuitImportantForm.js", "fillSuitFundForm.js", "fillConfirmationForm.js", "automate.js", "1035.js", "fillFloridaOwnerForm.js", "fillFloridaSuitOwner.js", "fillFloridaSuitFinancialForm.js", "fillFloridaSuitImportantForm.js","fillFloridaSuitSupplementForm.js", "fillFloridaSuitAcknowledgement.js", "fillFloridaSuitAdditional.js", "fillCreditingOption.js"] 
+  },
+  "permissions": ["tabs", "<all_urls>"]
+}
